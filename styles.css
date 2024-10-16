@@ -89,10 +89,25 @@ nav ul li a:hover {
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    max-width: 2000px;
     flex-wrap: wrap;
 }
-
-
+.itemcard {
+    background-color: #262626;
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.itemcard>a>img {
+    border: 5px solid gray;
+    width: 75%;
+    height: auto;
+}
+figcaption {
+    font-size:12px
+}
 /* Card (product image) Styling */
 .card {
     background-color: #262626;
@@ -138,4 +153,3 @@ footer {
     text-align: center;
     color: #f0f0f0;
 }
-
