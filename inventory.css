@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d0d0d;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+#inventory {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transform for pop-out effect */
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add transform for pop-out effect */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Pop-out effect on hover */
+}
+
+.card h3 {
+    color: #ffcc00;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
