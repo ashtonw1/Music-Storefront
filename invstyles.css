@@ -1,0 +1,23 @@
+.card:hover {
+    box-shadow: 0px 0px 5px white; 
+}
+.grid>a:link{
+    text-decoration: none;
+    color:white;
+}
+.grid>a:visited{
+    color:gray;
+}
+.grid>a:hover{
+    text-decoration: none;
+    color:yellow;
+}
+a>div>img {
+    width:66%;
+    height: 66%;
+   
+}
+.card {
+    max-height: 400px;
+    min-height: 400px;
+}
