@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Sets the font family */
+    background: url('../images/background.webp') no-repeat center center fixed; /* Background image setup */
+    background-size: cover; /* Cover to fill the viewport */
+    color: #f0f0f0; /* Text color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    position: relative;
+    min-height: 100%; /* Ensures the body takes at least the full height of the viewport */
+}
+
+/* Overlay for the body to darken background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(13, 13, 13, 0.8); /* Transparent dark background */
+    padding: 20px 0; /* Vertical padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow to separate header from content */
+}
+
+/* Centering the h1 tags in sections */
+section h1 {
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Uses flexbox for horizontal layout */
+    justify-content: center; /* Centers the list items */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    margin: 0 20px; /* Adds spacing between the navigation items */
+}
+
+nav ul li a {
+    color: #ffcc00; /* Yellow color for the links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: 600; /* Bold text */
+    letter-spacing: 1px; /* Adds space between letters */
+    transition: color 0.3s ease; /* Smooth transition effect on color change */
+}
+
+nav ul li a:hover {
+    color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Hero Section Styles */
+#hero {
+    text-align: center; /* Centers the text */
+    padding: 100px 20px; /* Adds padding to the top and bottom */
+    color: white; /* Text color */
+}
+
+#hero h1 {
+    font-size: 48px; /* Font size for the main heading */
+    font-weight: 700; /* Bold weight for the heading */
+    text-transform: uppercase; /* Makes the text uppercase */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for readability */
+    transition: transform 0.3s ease; /* Adds a transition effect on hover */
+}
+
+#hero h1:hover {
+    transform: scale(1.1); /* Scales up the heading on hover */
+}
+
+#hero p {
+    font-size: 20px; /* Font size for the paragraph */
+    margin: 20px 0; /* Adds vertical margin */
+}
+
+/* Button Styles */
+.btn {
+    background-color: #ffcc00; /* Yellow button background */
+    color: #0d0d0d; /* Dark text color for contrast */
+    padding: 15px 30px; /* Padding for the button */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    letter-spacing: 1px; /* Adds spacing between letters */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    transform: scale(1.1); /* Button scaling effect on hover */
+}
+
+/* Quote Section */
+#random-text .quote {
+    font-style: italic; /* Italic text style */
+    font-size: 24px; /* Font size for quotes */
+    text-align: center; /* Centers the quote */
+    margin: 40px 0; /* Vertical margin */
+}
+
+#random-text .quote a {
+    color: #ffffff; /* White color for links inside the quotes */
+    text-decoration: none; /* Removes underline from the links */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+}
+
+#random-text .quote a:hover {
+    color: #f5e1a4; /* Light yellow on hover for links */
+}
+
+/* Featured Products Section */
+#featured-products {
+    padding: 50px 20px; /* Padding around the section */
+    text-align: center; /* Centers the content */
+}
+
+#featured-products h2 {
+    font-size: 36px; /* Font size for the section heading */
+    color: #ffcc00; /* Yellow color for the heading */
+}
+
+/* Grid layout for product cards */
+.grid {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: center; /* Centers the cards */
+    gap: 40px; /* Adds space between cards */
+    margin-top: 40px; /* Adds margin to the top */
+}
+
+/* Product Cards */
+.card {
+    background-color: rgba(38, 38, 38, 0.9); /* Slightly transparent dark background */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    width: 300px; /* Fixed width for product cards */
+    text-align: center; /* Centers the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Card scales up on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds shadow effect on hover */
+}
+
+.card img {
+    max-width: 100%; /* Ensures the image fits inside the card */
+    border-radius: 10px; /* Rounded corners for images */
+    max-height: 250px; /* Restricts image height */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Image zoom effect on hover */
+}
+
+.card h3 {
+    color: #ffcc00; /* Yellow text for the product name */
+    font-size: 24px; /* Font size for product names */
+    margin: 15px 0; /* Adds vertical margin */
+}
+
+.card p {
+    font-size: 18px; /* Font size for the price or description */
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+    background-color: #0d0d0d; /* Dark background for the secondary button */
+    color: #ffcc00; /* Yellow text for the button */
+    padding: 10px 20px; /* Padding around the button */
+    border: 1px solid #ffcc00; /* Yellow border for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition on background color */
+}
+
+.btn-secondary:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: #0d0d0d; /* Dark text on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(13, 13, 13, 0.8); /* Transparent dark background */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Centers the text */
+    color: #f0f0f0; /* Light text color */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Shadow at the top of the footer */
+}

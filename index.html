@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Storefront - Home</title>
-    <link rel="stylesheet" href="homestyles.css">
-    <link rel="stylesheet" href="invstyles.css">
+    <link rel="stylesheet" href="assets/css/homestyles.css">
+    <link rel="stylesheet" href="assets/css/invstyles.css">
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
+    <audio id="background-music" autoplay loop>
+        <source src="assets/music/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="inventory.html">Inventory</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="demos.html">Demos</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="pages/inventory.html">Inventory</a></li>
+                <li><a href="pages/inventoryused.html">Pre-Owned</a></li>
+                <li><a href="pages/reviews.html">Reviews</a></li>
+                <li><a href="pages/demos.html">Demos</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,42 +29,42 @@
     <section id="hero">
         <h1>Welcome to the Music Storefront</h1>
         <p>Your one-stop shop for the finest instruments and gear</p>
-        <a href="inventory.html" class="btn">Browse Our Collection</a>
+        <a href="pages/inventory.html" class="btn">Browse Our Collection</a>
         <p>Explore a wide range of musical instruments, from guitars to pianos, all at unbeatable prices!</p>
     </section>
 
     <section id="random-text">
-        <blockquote class="quote quote-1">
+        <div class="quote">
             <a href="https://en.wikipedia.org/wiki/Henry_Wadsworth_Longfellow" target="_blank">“Music is the universal language of mankind.” - Henry Wadsworth Longfellow</a>
-        </blockquote>
-        <blockquote class="quote quote-2">
+        </div>
+        <div class="quote">
             <a href="https://en.wikipedia.org/wiki/Hans_Christian_Andersen" target="_blank">“Where words fail, music speaks.” - Hans Christian Andersen</a>
-        </blockquote>
-        <blockquote class="quote quote-3">
-             <a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche" target="_blank">“Without music, life would be a mistake.” -Friedrich Nietzsche</a>
-        </blockquote>
+        </div>
+        <div class="quote">
+            <a href="https://en.wikipedia.org/wiki/Friedrich_Nietzsche" target="_blank">“Without music, life would be a mistake.” -Friedrich Nietzsche</a>
+        </div>
     </section>
-
+    
     <section id="featured-products">
         <h2>Featured Products</h2>
         <div class="grid">
-            <div class="homecard">
-                <img src="yamahakeys.png" alt="yamahakeys">
+            <div class="card">
+                <img src="assets/images/yamahakeys.png" alt="yamahakeys">
                 <h3>Yamaha CK88 Piano</h3>
                 <p>$1,499.99 - Brand New</p>
-                <a href="inventory.html" class="btn-secondary">View More</a>
+                <a href="pages/inventory.html" class="btn-secondary">View More</a>
             </div>
-            <div class="homecard">
-                <img src="deanslime.png" alt="Dean1">
+            <div class="card">
+                <img src="assets/images/deanslime.png" alt="Dean1">
                 <h3>Dean Dime Razorback</h3>
                 <p>$3,999.99 - Pre-Owned</p>
-                <a href="inventoryused.html" class="btn-secondary">View More</a>
+                <a href="pages/inventoryused.html" class="btn-secondary">View More</a>
             </div>
-            <div class="homecard">
-                <img src="zildjianALCHEM.png" alt="Drums1">
+            <div class="card">
+                <img src="assets/images/zildjianALCHEM.png" alt="Drums1">
                 <h3>Zildjian ALCHEM-E Bronze EX</h3>
                 <p>$3,499.99 - Brand New</p>
-                <a href="inventory.html" class="btn-secondary">View More</a>
+                <a href="pages/inventory.html" class="btn-secondary">View More</a>
             </div>
         </div>
     </section>
@@ -67,6 +73,6 @@
         <p>&copy; 2024 Music Storefront | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
