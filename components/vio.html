@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Storefront - Inventory</title>
-    <link rel="stylesheet" href="../assets/css/homestyles.css">
+    <link rel="stylesheet" href="../assets/css/exstyles.css">
     <link rel="stylesheet" href="../assets/css/itempage.css">
+    <script src="../assets/js/cart.js"></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,8 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/inventory.html">Inventory</a></li>
-                <li><a href="../pages/inventoryused.html">Used Inventory
+                <li><a href="../pages/inventoryused.html">Pre-Owned
+                </a></li>
                 <li><a href="../pages/reviews.html">Reviews</a></li>
                 <li><a href="../pages/demos.html">Demos</a></li>
                 <li><a href="../pages/contact.html">Contact Us</a></li>
@@ -22,7 +24,7 @@
     </header>
 
     <section id="inventoryused">
-        <h1>Cremona SV-500</h1>
+        <h1 id="name">Cremona SV-500</h1>
         <div class="grid">
            
             <div class="itemcard">
@@ -34,7 +36,9 @@
                 <p>A beautiful violin with 3/4 size. As it is pre-equipped with steel strings and a lightweight tuner tailpiece, it is a great fit for the advanced student. </p>
                <br>
                <br>
-                <h2>$332.99</h2>
+               <h2>Price (USD):</h2>
+                <h2 id="price">$332.99</h2>
+                <input type="button" value="Add to Cart" onclick="addCart()">
             </div>
         </div>
     </section>
@@ -42,5 +46,6 @@
     <footer>
         <p>&copy; 2024 Music Storefront | All Rights Reserved</p>
     </footer>
+    
 </body>
 </html>

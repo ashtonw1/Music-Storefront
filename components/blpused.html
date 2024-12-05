@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Storefront - Inventory</title>
-    <link rel="stylesheet" href="../assets/css/homestyles.css">
+    <link rel="stylesheet" href="../assets/css/exstyles.css">
     <link rel="stylesheet" href="../assets/css/itempage.css">
+    <script src="../assets/js/cart.js"></script>
+
 </head>
 <body>
     <header>
@@ -14,6 +16,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/inventory.html">Inventory</a></li>
                 <li><a href="../pages/inventoryused.html">Used Inventory
+                </a></li>
                 <li><a href="../pages/reviews.html">Reviews</a></li>
                 <li><a href="../pages/demos.html">Demos</a></li>
                 <li><a href="../pages/contact.html">Contact Us</a></li>
@@ -22,7 +25,7 @@
     </header>
 
     <section id="inventoryused">
-        <h1>Epiphone Les Paul Custom</h1>
+        <h1 id="name">Epiphone Les Paul Custom</h1>
         <div class="grid">
            
             <div class="itemcard">
@@ -34,7 +37,8 @@
                 <p>A solidbody electric guitar with a maple top, mahogany body and neck, ebony Fingerboard, and dual humbucking pickups. Displays a beautiful finish of Viper Blue.</p>
                <br>
                <br>
-                <h2>$694.99</h2>
+                <h2 id="price">$694.99</h2>
+                <input type="button" value="Add to Cart" onclick="addCart()">
             </div>
         </div>
     </section>

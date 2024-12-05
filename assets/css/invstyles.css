@@ -21,3 +21,11 @@ a>div>img {
     max-height: 400px;
     min-height: 400px;
 }
+.grid {
+    max-width: 1500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+section {
+    padding-bottom: 25px;
+}

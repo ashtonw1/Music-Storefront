@@ -7,3 +7,12 @@ img {
 img:hover {
   transform:scale(1.4);
 }
+input {
+  font-family:'Poppins', sans-serif;
+  font-size: 1em;
+  border-radius:15px;
+  color:white;
+  background-color: #262626;
+  box-shadow: 1px 1px 3px;
+  
+}
